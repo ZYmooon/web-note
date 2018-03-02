@@ -15,15 +15,9 @@ function toast(status, msg, time) {
 
 toast.prototype = {
     createToast: function () {
-        if (this.status === 1) {
-            let html = `<div class="toast"><img src="../../imgs/1.png" class="toast_icon"></img><span class="toast_word">${this.msg}</span></div>`;
-            this.$toast = $(html);
-            $('body').append(this.$toast);
-        } else {
-            let html = `<div class="toast"><img src="../../imgs/0.png" class="toast_icon"></img><span class="toast_word">${this.msg}</span></div>`;
-            this.$toast = $(html);
-            $('body').append(this.$toast);
-        }
+        var tpl = '<div class="toast">'+this.msg+'</div>';
+        this.$toast = $(tpl);
+        $('body').append(this.$toast);
     },
     showToast: function () {
         let _this = this;

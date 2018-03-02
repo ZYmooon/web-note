@@ -10,13 +10,13 @@ body {
   user-select: none; }
 
 body {
-  background: url("http://ohggtqwxx.bkt.clouddn.com/bg4.jpg") 0 0 no-repeat;
+  background: url("https://wallpaperscraft.com/image/background_tapes_radiation_hazard_wall_18526_1280x1024.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
 #header {
   width: 100%;
-  background-color: #5f74ac;
+  background-color: rgba(52, 140, 152, 0.404);
   position: fixed;
   height: 67px;
   z-index: 10000;
@@ -73,12 +73,6 @@ body {
   text-align: center;
   display: none;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.6); }
-  .toast .toast_icon {
-    width: 25px;
-    vertical-align: middle;
-    padding-right: 7px; }
-  .toast .toast_word {
-    vertical-align: middle; }
 /*--------note----------*/
 #content {
   position: relative;
