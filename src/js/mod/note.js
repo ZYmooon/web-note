@@ -61,7 +61,7 @@ Note.prototype = {
         self.clock = setTimeout(()=> Event.fire('waterfall'), 100);
     },
     bind: function () {
-        let _this = this, //记录下坑，之前末尾是分号不是逗号后面都变成了全局变量结果造成了最后一个才能修改😂
+        let _this = this, 
             $note = this.$note,
             $noteHead = $note.find('.note-head'),
             $noteCt = $note.find('.note-ct'),
@@ -154,8 +154,5 @@ Note.prototype = {
         }
     }
 }
-
-
-
 
 module.exports.Note = Note;

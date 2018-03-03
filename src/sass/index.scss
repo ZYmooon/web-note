@@ -27,9 +27,8 @@ body {
     .add-note {
         float: left;
         font-size: 24px;
-        font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
         padding: 16px 1px;
-        color: #fed136;
+        color: #36feb1;
         margin-left: 100px;
         text-decoration: none;
         transition: all .5s;
@@ -68,6 +67,9 @@ body {
             .login {
                 color: #fff;
                 text-decoration: none;
+                &:hover{
+                    color: gray;
+                }
             }
         }
     }

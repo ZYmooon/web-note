@@ -24,9 +24,8 @@ body {
   #header .add-note {
     float: left;
     font-size: 24px;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
     padding: 16px 1px;
-    color: #fed136;
+    color: #36feb1;
     margin-left: 100px;
     text-decoration: none;
     transition: all .5s; }
@@ -59,6 +58,8 @@ body {
       #header .user-area li .login {
         color: #fff;
         text-decoration: none; }
+        #header .user-area li .login:hover {
+          color: gray; }
 /* --------toast---------- */
 .toast {
   position: fixed;

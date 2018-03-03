@@ -22,7 +22,8 @@ passport.use(
     {
       clientID: "11d785b0a657cbdef5b7",
       clientSecret: "0601149d588baf626fc4b4f3d033c2470e48401a",
-      callbackURL: "http://localhost:4895/auth/github/callback"
+      //callbackURL: "http://localhost:4895/auth/github/callback"
+      callbackURL: "http://zhoupengjie.top/auth/github/callback"
     },
     function(accessToken, refreshToken, profile, cb) {
       // User.findOrCreate({ githubId: profile.id }, function (err, user) {
