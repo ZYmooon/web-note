@@ -12,10 +12,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /(\.scss)$/,
+        test: /(\.less)$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: ["css-loader", "sass-loader"]
+          use: ["css-loader", "less-loader"]
         }) //把 css 抽离出来生成一个文件
       },
       {
@@ -27,9 +27,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      jquery: path.join(__dirname, "js/lib/jquery-2.0.3.min.js"),
+      jquery: path.join(__dirname, "js/lib/jquery-3.3.1.min"),
       mod: path.join(__dirname, "js/mod"),
-      sass: path.join(__dirname, "sass")
+      less: path.join(__dirname, "less")
     }
   },
   plugins: [

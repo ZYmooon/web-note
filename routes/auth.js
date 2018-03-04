@@ -20,10 +20,16 @@ passport.deserializeUser(function (obj, done) {
 passport.use(
   new GitHubStrategy(
     {
-      clientID: "11d785b0a657cbdef5b7",
-      clientSecret: "0601149d588baf626fc4b4f3d033c2470e48401a",
-      //callbackURL: "http://localhost:4895/auth/github/callback"
-      callbackURL: "http://zhoupengjie.top/auth/github/callback"
+    /*线上oauth */
+      //   clientID: "11d785b0a657cbdef5b7",
+      //   clientSecret: "0601149d588baf626fc4b4f3d033c2470e48401a",
+      //   callbackURL: "http://localhost:4895/auth/github/callback"
+      //callbackURL: "http://zhoupengjie.top/auth/github/callback"
+
+      /*测试oauth*/
+      clientID: "a54f803630dca2449c50",
+      clientSecret: "9d9fbc51b51fec94728d64bd44aa8bea370dbd66",
+      callbackURL: "http://localhost:5000/auth/github/callback"
     },
     function(accessToken, refreshToken, profile, cb) {
       // User.findOrCreate({ githubId: profile.id }, function (err, user) {

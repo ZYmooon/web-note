@@ -1,5 +1,5 @@
-require('sass/note.scss')
-require('sass/markdown.scss')
+require('less/note.less')
+require('less/markdown.less')
 let Toast = require('./toast.js').Toast;
 let Event = require('./event.js');
 

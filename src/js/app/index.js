@@ -1,4 +1,4 @@
-require("sass/index.scss");
+require("less/index.less");
 let Toast = require("mod/toast.js").Toast;
 let WaterFall = require("mod/waterfall.js");
 let NoteManager = require("mod/note-manager");

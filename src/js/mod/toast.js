@@ -1,4 +1,4 @@
-require('sass/toast.scss');
+require('less/toast.less');
 
 
 /* 
