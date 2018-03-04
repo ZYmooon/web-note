@@ -8,6 +8,6 @@
 - 运维： linux 命令行、git、pm2、代理配置
 
 
-####clone后，需要npm install 下载需要的模块
-将bin/www 的端口改掉
-将routes/auth.js  里的passport.ues 改掉
+#### clone后，需要``npm install`` 下载需要的模块
+- 将bin/www 的端口改掉
+- 将routes/auth.js里的passport.ues 改掉
