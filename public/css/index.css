@@ -94,25 +94,25 @@ body {
   position: absolute;
   color: #333;
   width: 230px;
-  margin: 20px 11px;
+  margin: 8px 11px;
 }
 #content .note:nth-child(even) {
-  transform: rotate(1deg);
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
 }
 #content .note:nth-child(3n) {
-  transform: rotate(-1deg);
-  -webkit-transform: rotate(-1deg);
-  -moz-transform: rotate(-1deg);
-  -ms-transform: rotate(-1deg);
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
 }
 #content .note:nth-child(5n) {
   transform: rotate(1deg);
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
 }
 #content .note .note-head {
   height: 20px;

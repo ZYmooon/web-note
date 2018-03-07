@@ -160,11 +160,9 @@ router.post('/notes/delete', function (req, res, next) {
   if (username === "ZYmooon") {
     Note.destroy({ where: { id: deleteid } })
       .then(function(data) {
-        if (data !== 0) {
+        if (data === 0) {
           res.send({ status: 1 });
-        } else {
-          res.send({ status: 0, errorMsg: "删除失败！" });
-        }
+        } 
       })
       .catch(function(e) {
         res.send({ status: 0, errorMsg: "数据库异常或者你没有权限" });
@@ -172,10 +170,8 @@ router.post('/notes/delete', function (req, res, next) {
   } else {
     Note.destroy({ where: { id: deleteid, userid: userid } })
       .then(function(data) {
-        if (data !== 0) {
+        if (data === 0) {
           res.send({ status: 1 });
-        } else {
-          res.send({ status: 0, errorMsg: "删除失败！" });
         }
       })
       .catch(function(e) {
