@@ -8,6 +8,18 @@
 - 运维： linux 命令行、git、pm2、代理配置
 
 
-#### clone后，需要``npm install`` 下载需要的模块
-- 将bin/www 的端口改掉
-- 将routes/auth.js里的passport.ues 改掉
+#### clone后，需要``npm install`` 下载需要的依赖
+- ``node bin/www`` 启动项目
+- 如果出现sqlite3的报错，请
+  ``npm uninstall sqlite3``
+  然后再重新
+  ``npm insatll sqlite3 -S``
+
+- 如果项目没有启动，页面无内容，请检查bin/www 下的port是否是500
+- 如果登录后出现报错，请联系我  weixin：zhoyi032  /   qq:1130192385
+
+
+
+修改内容为：当便利贴内容为空时，可以删除，之前是当便签内容为空时，便签不能删除
+
+新增：当页面大小发现变化时，标签重新通过瀑布流渲染
