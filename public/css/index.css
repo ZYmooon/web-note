@@ -16,7 +16,8 @@ body {
 #header {
   width: 100%;
   background-color: rgba(52, 140, 152, 0.404);
-  position: fixed;
+  display: flex;
+  justify-content: space-between;
   height: 67px;
   z-index: 10000;
   top: 0;
@@ -30,13 +31,9 @@ body {
   text-decoration: none;
   transition: all .5s;
 }
-#header .add-note:hover {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 2px;
-}
 #header .user-area {
-  float: right;
-  margin-right: 120px;
+  justify-content: space-between;
+  margin-left: 120px;
 }
 #header .user-area li {
   float: left;
@@ -62,10 +59,19 @@ body {
 #header .user-area li .logout {
   text-decoration: none;
   color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 8px;
+}
+#header .user-area li .logout:hover {
+  color: gray;
 }
 #header .user-area li .login {
   color: #fff;
   text-decoration: none;
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 8px;
 }
 #header .user-area li .login:hover {
   color: gray;
@@ -95,6 +101,7 @@ body {
   color: #333;
   width: 230px;
   margin: 8px 11px;
+  transition: all .4s;
 }
 #content .note:nth-child(even) {
   transform: rotate(2deg);
@@ -135,6 +142,7 @@ body {
   width: 64px;
   height: 20px;
   background: #35bba3;
+  opacity: .9;
 }
 #content .note .note-head:after {
   position: absolute;
