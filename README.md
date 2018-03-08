@@ -4,6 +4,8 @@
 - 后端运用到的技术是：网站后端架构、MVC概念、Express的使用、路由、中间件、sqlite3、nodejs 调试
 - 运维运用到的技术是：git托管代码，pm2,linux命令行
 
+[线上预览](http://zhoupengjie.top)
+
 ### 启动应用
 - git clone该项目，然后可以通过``npm install``，下载相应的依赖，
 - 通过``npm start``启动应用
